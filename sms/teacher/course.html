@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+     <style>
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Courses</h1>
+    <form action="course.php" method="POST">
+        <label for="course_name">Course Name:</label>
+        <input type="text" id="course_name" name="course_name" required><br>
+
+        <label for="course_code">Course Code:</label>
+        <input type="text" id="course_code" name="course_code" required><br>
+
+        <label for="course_description">Course Description:</label>
+        <textarea id="course_description" name="course_description" required></textarea><br>
+
+        <input type="submit" value="Add Course" name="add_course">
+    </form>
+</body>
+</html>

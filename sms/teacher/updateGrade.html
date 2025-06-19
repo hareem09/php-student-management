@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+     <style>
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Page</h1>
+    <form action="updateGrade.php" method="post">
+        <label for="s_id">Student ID:</label>
+        <input type="text" id="s_id" name="s_id" required><br><br>
+        <label for="c_id">Course ID:</label>
+        <input type="text" id="c_id" name="c_id" required><br><br>
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required><br><br>
+        <input type="submit" value="Update" name="update">
+    </form>
+</body>
+</html>
